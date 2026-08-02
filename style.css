@@ -8,6 +8,24 @@
   background-size: cover;
   background-position: center;
   min-height: 480px;
+  margin: 24px;
+  border-radius: 12px;
+}
+
+/* Media query própria — exigência da atividade além do grid do Bootstrap */
+@media (max-width: 768px) {
+  .banner {
+    min-height: 320px;
+    margin: 16px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    min-height: 220px;
+    margin: 10px;
+  }
 }
 
 .logo-footer {
