@@ -9,3 +9,8 @@
   background-position: center;
   min-height: 480px;
 }
+
+.logo-footer {
+  max-width: 180px;
+  height: auto;
+}
