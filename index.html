@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- Menu de navegação principal: logo, botão de login sempre visível, itens de navegação que colapsam em telas pequenas -->
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -32,7 +33,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Novidades</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#novidades">Novidades</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Jogos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Consoles</a></li>
                     </ul>
@@ -42,14 +43,15 @@
     </header>
     <main>
 
-        <!-- Banner -->
+        <!-- Banner: imagem de fundo com a marca; h1 escondido garante semântica sem duplicar visualmente o texto que já está na imagem -->
         <section class="banner d-flex align-items-end">
             <div class="container-fluid pb-5">
+                <h1 class="visually-hidden">GamerTech - loja de eletrônicos para o universo gamer</h1>
                 <a href="#novidades" class="btn btn-lg btn-outline-light">Ver novidades</a>
             </div>
         </section>
 
-        <!-- Destaque -->
+        <!-- Destaque: um único produto em evidência, diferente do grid de Novidades -->
          <section class="destaque py-5" id="destaque">
             <div class="container">
                 <div class="row align-items-center g-4">
@@ -68,7 +70,7 @@
             </div>
          </section>
 
-         <!-- Novidades -->
+         <!-- Novidades: grid de produtos usando o sistema de cards do Bootstrap -->
           <section class="novidades py-5 bg-body-tertiary" id="novidades">
             <div class="container">
                 <h2 class="mb-4">Novidades</h2>
@@ -117,7 +119,7 @@
             </div>
           </section>
 
-          <!-- Galeria -->
+          <!-- Galeria: Carousel do Bootstrap ativado via atributo data-bs-ride, sem necessidade de JS próprio -->
            <section class="galeria py-5" id="galeria">
                 <div class="container">
                     <h2 class="mb-4">Galeria</h2>
@@ -154,7 +156,7 @@
                 <div class="col-md-4">
                     <h5>Contato</h5>
                     <p class="mb-1">Telefone: (81) 93444-4443</p>
-                    <p class="mb-1">E-mail: contato@gamerTech.com</p>
+                    <p class="mb-1">E-mail: contato@gamertech.com</p>
                     <p>Localização: Rua Exemplo, 123 - Recife/PE</p>
                 </div>
                 <div class="col-md-4">

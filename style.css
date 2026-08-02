@@ -1,3 +1,10 @@
+/* ===================================================
+   GamerTech — folha de estilos
+   Sobrescreve variáveis internas do Bootstrap (--bs-*)
+   em vez de usar !important em tudo, para manter os
+   estados de hover/active nativos do Bootstrap funcionando.
+   =================================================== */
+
 .logo {
   width: 150px;
   height: auto;
@@ -35,6 +42,7 @@
   border-radius: 8px;
 }
 
+/* Variáveis de marca — cores extraídas do logotipo oficial da cliente */
 :root {
   --brand-black: #0B0E13;
   --brand-blue: #2F63E0;
@@ -69,4 +77,9 @@
 /* Fundo preto puro da nossa marca, em vez do cinza padrão do Bootstrap */
 .bg-dark {
   background-color: var(--brand-black) !important;
+}
+
+/* Limita a largura do card de login para não esticar em telas grandes */
+.form-signin {
+  max-width: 400px;
 }

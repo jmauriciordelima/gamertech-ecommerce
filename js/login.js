@@ -1,3 +1,7 @@
+// login.js
+// Intercepta o envio do formulário de login e valida no navegador (client-side).
+// Não existe backend real: aprovação = mensagem de sucesso + redirecionamento simulado.
+
 // Validação do formulário de login com jQuery
 $(document).ready(function () {
 
