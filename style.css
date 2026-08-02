@@ -14,3 +14,39 @@
   max-width: 180px;
   height: auto;
 }
+
+:root {
+  --brand-black: #0B0E13;
+  --brand-blue: #2F63E0;
+  --brand-blue-dark: #1C4FBD;
+  --brand-red: #DC1E28;
+  --brand-red-dark: #B8161F;
+}
+
+/* Botões sólidos (Comprar agora, Entrar quando preenchido) */
+.btn-primary {
+  --bs-btn-bg: var(--brand-blue);
+  --bs-btn-border-color: var(--brand-blue);
+  --bs-btn-hover-bg: var(--brand-blue-dark);
+  --bs-btn-hover-border-color: var(--brand-blue-dark);
+  --bs-btn-active-bg: var(--brand-blue-dark);
+  --bs-btn-active-border-color: var(--brand-blue-dark);
+}
+
+/* Botões outline (Entrar, Ver novidades, Ver produto) */
+.btn-outline-primary {
+  --bs-btn-color: var(--brand-blue);
+  --bs-btn-border-color: var(--brand-blue);
+  --bs-btn-hover-bg: var(--brand-blue);
+  --bs-btn-hover-border-color: var(--brand-blue);
+}
+
+/* Badge "Mais vendido" */
+.text-bg-danger {
+  background-color: var(--brand-red) !important;
+}
+
+/* Fundo preto puro da nossa marca, em vez do cinza padrão do Bootstrap */
+.bg-dark {
+  background-color: var(--brand-black) !important;
+}
